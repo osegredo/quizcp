@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa de Pandora - Obrigado</title>
+    <link rel="stylesheet" href="../style.css">
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '604456950319658');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=604456950319658&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
+</head>
+
+<body>
+    <header></header>
+    <section>
+        <div>
+            <h3>Obrigada por responder.</h3>
+            <p>Você verá uma apresentação a seguir que mudará completamente sua visão quando se trata de atração
+                feminina. <br><br>Por favor só clique no link se você tem a inteção de ver apresentação, pois ela será liberada para outra pessoa.</p>
+            <div class="container-button">
+                <button class="button-o" onclick="continuar()">PROSSEGUIR PARA VÍDEO</button>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+    <script>
+        function continuar() {
+            setTimeout(function () {
+                fbq('track', 'PageView-CP');
+                window.open('http://bit.ly/2tuwhYk');
+            }, 500);
+        }
+    </script>
+</body>
+
+</html>
